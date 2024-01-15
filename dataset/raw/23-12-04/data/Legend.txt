@@ -1,0 +1,7 @@
+XX - Tagning
+A - Klisterlapp av
+P - Klisterlapp på
+K - Kompressor på
+B - Enbart brus
+R - Ambiance robotljud
+X - Möjligtvis oanvändbar (folk pratar, robot kör inte, et.c)
