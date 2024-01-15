@@ -1,5 +1,8 @@
 # gitignore file
 
+# do not push duplicated data
+dataset/used/*
+
 ##########
 # General
 ##########
