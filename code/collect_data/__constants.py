@@ -5,9 +5,9 @@ CATEGORY = {"sticker_on": 0, "sticker_on_compressor": 1, "sticker_off": 2, "stic
 
 # file paths
 __FILE_PATH = os.path.dirname(os.path.abspath(__file__))
-__GTC_PATH = os.path.join(__FILE_PATH, "..")
-__DATASET_PATH = os.path.join(__GTC_PATH, "dataset/")
-ROOT_PATH = os.path.join(__GTC_PATH, "..", "..")
-META_PATH = os.path.join(__DATASET_PATH, "meta/")
+ROOT_PATH = os.path.join(__FILE_PATH, "..", "..")
+RAW_DATA_PATH = os.path.join(ROOT_PATH, "dataset", "raw")
+USED_DATA_PATH = os.path.join(ROOT_PATH, "dataset", "used")
+META_PATH = os.path.join(USED_DATA_PATH, "meta")
 # data raw recordings
-DATA_DST_PATH = os.path.join(__DATASET_PATH, "audio/")
+DATA_DST_PATH = os.path.join(USED_DATA_PATH, "audio")

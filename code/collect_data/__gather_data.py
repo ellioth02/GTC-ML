@@ -7,7 +7,7 @@ from enum import Enum
 import numpy as np
 from scipy.io import wavfile
 
-from collect_data.__constants import ROOT_PATH, DATA_DST_PATH, META_PATH
+from collect_data.__constants import RAW_DATA_PATH, DATA_DST_PATH, META_PATH
 
 # represents the data from one recording session
 class __BaseDataSet:
@@ -16,7 +16,7 @@ class __BaseDataSet:
         self.name = name
         self.id = str(id)
         # compute the different paths used by the dataset
-        self.data_path = os.path.join(ROOT_PATH, self.name, "data/")
+        self.data_path = os.path.join(RAW_DATA_PATH, self.name, "data/")
         self.datalist_path = os.path.join(META_PATH, self.name + "-datalist.json")
 
 # specifies which half of audio to copy
