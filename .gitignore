@@ -1,7 +1,7 @@
 # gitignore file
 
 # do not push duplicated data
-dataset/used/*
+dataset/used/audio/*.wav
 
 ##########
 # General
